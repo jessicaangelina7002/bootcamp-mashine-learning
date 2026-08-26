@@ -9,7 +9,7 @@ model = joblib.load("model_kredit.pkl")
 st.title("Aplikasi Persetujuan Kredit Based on AI Model")
 st.write("Aplikasi ini memprediksi apakah pengajuan kredit disetujui atau tidak.")
 
-with st.form("Form Credit")
+with st.form("Form Credit"):
     #2. membuat form input untuk user kita
     gaji = st.number_input("Gaji Bulanan (Juta Rupiah)", min_value=1, max_value=30, value=5)
     umur = st.number_input("Umur", min_value=17, max_value=100, value=25)
