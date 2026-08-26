@@ -24,7 +24,7 @@ if submit_button:
         'Cicilan':[cicilan]
     })
 
-hasil= model.predict(data.baru)[0]
+hasil= model.predict(data_baru)[0]
 
 st.markdown("----")
 if hasil == 1:
