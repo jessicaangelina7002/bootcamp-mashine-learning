@@ -24,10 +24,10 @@ if submit_button:
         'Cicilan':[cicilan]
     })
 
-hasil= model.predict(data_baru)[0]
+    hasil= model.predict(data_baru)[0]
 
-st.markdown("----")
-if hasil == 1:
-    st.success("selamat pengajuan kredit anda kemungkinan di terima")
-else:
-    st.error("yahh maaf pengajuan kredit anda di tolak")
+    st.markdown("----")
+    if hasil == 1:
+        st.success("selamat pengajuan kredit anda kemungkinan di terima")
+    else:
+        st.error("yahh maaf pengajuan kredit anda di tolak")
